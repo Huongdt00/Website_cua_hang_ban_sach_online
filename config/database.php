@@ -1,10 +1,10 @@
 
 <?php
 
-$host = "localhost";
-$dbname = "website_cua_hang_ban_sach_online";
-$username = "root";
-$password = "";
+$host = '127.0.0.1';
+$dbname = 'website_cua_hang_ban_sach_online';
+$username = 'root';
+$password = 'Thienhuong00';
 
 try {
     $conn = new PDO(
@@ -25,5 +25,5 @@ try {
 
 } catch (PDOException $e) {
     error_log($e->getMessage());
-    exit("Không thể kết nối cơ sở dữ liệu. Vui lòng kiểm tra cấu hình.");
+    exit('Không thể kết nối database. Hãy kiểm tra cấu hình MySQL.');
 }
